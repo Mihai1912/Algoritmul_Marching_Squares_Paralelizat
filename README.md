@@ -9,21 +9,21 @@ prin utilizarea bibliotecii pthread.
 
 ### Proiectul conține următoarele funcționalități cheie:
 
-    **1. Redimensionare Imagine:**
+    1. Redimensionare Imagine:
     Codul poate redimensiona imaginea de intrare pentru a se potrivi 
     unei dimensiuni predefinite (RESCALE_X și RESCALE_Y). Aceasta simplifică procesul de 
     generare a conturului.
 
-    **2. Crearea Grid ului:**
+    2. Crearea Grid ului:
     Imaginea redimensionată este împărțită într-o grilă de celule, iar 
     valoarea fiecărei celule este stabilită prin comparație cu valoarea de prag (sigma).
 
-    **3. Marching Squares:**
+    3. Marching Squares:
     Acest pas analizează grila eșantionată pentru a identifica tipul de 
     contur pentru fiecare subgrilă și înlocuiește pixelii din imaginea originală cu pixelii 
     din imaginea de contur corespunzătoare.
 
-    **4. Paralelizare:**
+    4. Paralelizare:
     Codul utilizează mai multe fire de execuție pentru a accelera procesul de 
     generare a contururilor. Fiecare fir de execuție gestionează o parte a imaginii de 
     intrare și efectuează operațiile de redimensionare, crearea grid ului și Marching Squares 
